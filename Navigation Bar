@@ -1,0 +1,33 @@
+import Link from "next/link";
+
+export function Navbar() {
+  return (
+    <nav className="bg-black text-white py-4">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6">
+        <Link href="/">
+          <a className="text-2xl font-bold text-red-600">#Squad Goals Zero DUIs</a>
+        </Link>
+        <div className="space-x-6">
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+          <Link href="/programs">
+            <a>Programs</a>
+          </Link>
+          <Link href="/events">
+            <a>Events</a>
+          </Link>
+          <Link href="/volunteer">
+            <a>Volunteer</a>
+          </Link>
+          <Link href="/resources">
+            <a>Resources</a>
+          </Link>
+          <Link href="/contact">
+            <a>Contact</a>
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+}
