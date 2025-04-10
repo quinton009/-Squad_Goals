@@ -1,0 +1,15 @@
+export function AboutPage() {
+  return (
+    <main className="min-h-screen bg-black text-white p-6">
+      <section className="max-w-3xl mx-auto">
+        <h1 className="text-3xl font-bold mb-6 text-center text-red-600">About Us</h1>
+        <p className="mb-4">
+          #Squad Goals Zero DUIs is a nonprofit organization committed to reducing alcohol-related incidents in the military community. Our focus is on promoting responsibility, peer support, and providing safe transportation options for service members.
+        </p>
+        <p>
+          Founded at Fort Sill by dedicated leaders and volunteers, our initiative works closely with base leadership to create a culture of safety and accountability. Through education, events, and direct action, we aim to eliminate DUIs and their consequences among our ranks.
+        </p>
+      </section>
+    </main>
+  );
+}
