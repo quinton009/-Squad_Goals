@@ -1,0 +1,39 @@
+### **3. `pages/index.tsx` (Home Page)**
+
+```tsx
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
+import Image from "next/image";
+
+export default function HomePage() {
+  return (
+    <div>
+      <Navbar />
+      <main className="min-h-screen bg-black text-white">
+        <section className="relative h-[60vh]">
+          <Image
+            src="/hero.jpg"
+            alt="Hero Image"
+            layout="fill"
+            objectFit="cover"
+            className="opacity-50"
+          />
+          <div className="absolute inset-0 flex justify-center items-center text-center text-white">
+            <h1 className="text-5xl font-bold">Welcome to #Squad Goals Zero DUIs</h1>
+            <p className="mt-4 text-lg">
+              A nonprofit supporting safe transportation and responsibility within the military community.
+            </p>
+          </div>
+        </section>
+        <section className="text-center py-12">
+          <h2 className="text-3xl font-bold mb-4">Get Involved</h2>
+          <p>
+            We offer volunteer opportunities, events, and resources to support our mission. Join us in making a
+            difference.
+          </p>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}
